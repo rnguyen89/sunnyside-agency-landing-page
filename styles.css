@@ -2,7 +2,7 @@
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Fraunces', serif;
 }
 
@@ -19,8 +19,9 @@ nav a:last-child {
 }
 
 body {
-  background-color: hsl(189, 80%, 49%);
+  background-color: #41beff;
   font-family: 'Barlow', sans-serif;
+  margin: 0 auto;
 }
 
 nav {
@@ -36,3 +37,31 @@ nav a {
   color: white;
   font-weight: 700;
 }
+
+section.hero {
+  background-image: url("/images/desktop/image-header.jpg");
+  z-index: 99;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; */
+  text-align: center;
+
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center top 30%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+  background-color: #41beff;
+}
+
+section.hero h1,
+section.hero img {
+  padding-top: 10%;
+}
+
+section.hero h1 {
+  font-size: 88px;
+  color: white;
+}
+
