@@ -22,6 +22,7 @@ body {
   background-color: #41beff;
   font-family: 'Barlow', sans-serif;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 nav {
@@ -49,7 +50,7 @@ section.hero {
   text-align: center;
 
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center top 30%; /* Center the image */
+  background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Resize the background image to cover the entire container */
   background-color: #41beff;
@@ -65,3 +66,45 @@ section.hero h1 {
   color: white;
 }
 
+section.section-a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div.section-a-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  width: 50%;
+  background-color: white;
+}
+
+div.section-a-img {
+  display: flex;
+  width: 50%;
+
+}
+
+div.section-a-copy h2 {
+  font-size: 32px;
+}
+
+div.section-a-copy h2,
+div.section-a-copy p {
+  margin-bottom: 4%;
+}
+
+div.section-a-copy a {
+  color: hsl(213, 9%, 39%);
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Fraunces', serif;
+}
+
+div.section-a-copy a:hover {
+  border-bottom: 4px solid #fad305;
+  width: fit-content;
+}
