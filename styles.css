@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-weight: 700;
+  line-height: 1.2;
 }
 
 nav a:last-child {
@@ -21,6 +22,7 @@ nav a:last-child {
 body {
   background-color: #41beff;
   font-family: 'Barlow', sans-serif;
+  line-height: 1.4;
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -66,25 +68,31 @@ section.hero h1 {
   color: white;
 }
 
-section.section-a {
+section.section-a,
+section.section-b {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-div.section-a-copy {
+div.section-a-copy,
+div.section-b-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 8%;
   width: 50%;
+  height: 64vh;
+
   background-color: white;
 }
 
-div.section-a-img {
+div.section-a-img,
+div.section-b-about {
   display: flex;
   width: 50%;
+  height: 64vh;
 
 }
 
@@ -92,9 +100,23 @@ div.section-a-copy h2 {
   font-size: 32px;
 }
 
+div.section-b-about h3 {
+  font-size: 24px;
+}
+
 div.section-a-copy h2,
 div.section-a-copy p {
   margin-bottom: 4%;
+}
+
+div.section-b-about h3,
+div.section-b-about p {
+  text-align: center;
+
+}
+
+div.section-b-about p {
+  margin-top: 16px;
 }
 
 div.section-a-copy a {
@@ -107,4 +129,30 @@ div.section-a-copy a {
 div.section-a-copy a:hover {
   border-bottom: 4px solid #fad305;
   width: fit-content;
+}
+
+section.section-b div:nth-child(1) {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  height: 64vh;
+  justify-content: flex-end;
+  padding: 56px 172px;
+  color: hsl(213, 9%, 39%);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #41beff;
+}
+
+section.section-b div:nth-child(2) {
+  background-image: url("/images/desktop/image-photography.jpg");
+  height: 64vh;
+  justify-content: flex-end;
+  padding: 56px 202px;
+  color: hsl(212, 27%, 19%);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #41beff;
 }
