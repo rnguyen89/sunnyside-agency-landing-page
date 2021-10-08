@@ -58,14 +58,15 @@ section.hero {
   background-color: #41beff;
 }
 
-section.hero h1,
-section.hero img {
-  padding-top: 10%;
-}
-
 section.hero h1 {
   font-size: 88px;
   color: white;
+  letter-spacing: 8px;
+  padding-top: 288px;
+}
+
+section.hero img {
+  padding-top: 88px;
 }
 
 section.section-a,
@@ -94,6 +95,10 @@ div.section-b-about {
   width: 50%;
   height: 64vh;
 
+}
+
+div.section-a-img img {
+  width: fit-content;
 }
 
 div.section-a-copy h2 {
@@ -155,4 +160,51 @@ section.section-b div:nth-child(2) {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-color: #41beff;
+}
+
+section.section-c {
+  background-color: white;
+}
+
+section.section-c div.clients {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 104px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+section.section-c div.clients div {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  width: 33.333%;
+}
+
+section.section-c h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 104px 0 88px 0;
+  color: hsl(210, 4%, 67%);
+}
+
+section.section-c img {
+  border-radius: 50%;
+}
+
+section.section-c img,
+section.section-c p {
+  margin-bottom: 48px;
+}
+
+section.section-c h4 {
+  margin-bottom: 8px;
+}
+
+section.section-c h5 {
+  font-size: 12px;
+  color: hsl(210, 4%, 67%);
 }
