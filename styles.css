@@ -218,3 +218,32 @@ section.section-d-gallery img {
   /* width: 24.83%; */
   width: 25%;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #A0D2C5;
+}
+
+footer div {
+  margin: 32px 0 48px 0;
+}
+
+
+.footer-logo-color {
+  fill: #417367;
+}
+
+footer div a {
+  margin-left: 32px;
+  color: #417367;
+  text-decoration: none;
+
+}
+
+footer div.social img {
+  margin-left: 16px;
+}
