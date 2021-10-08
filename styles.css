@@ -208,3 +208,13 @@ section.section-c h5 {
   font-size: 12px;
   color: hsl(210, 4%, 67%);
 }
+
+section.section-d-gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+section.section-d-gallery img {
+  /* width: 24.83%; */
+  width: 25%;
+}
