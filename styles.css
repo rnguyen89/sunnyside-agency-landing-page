@@ -24,7 +24,7 @@ body {
   font-family: 'Barlow', sans-serif;
   line-height: 1.4;
   margin: 0 auto;
-  max-width: 1440px;
+  /* min-width: 960px; */
 }
 
 nav {
@@ -54,7 +54,7 @@ section.hero {
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
+  background-size: cover; /* Resize the background image to cover the entire container */
   background-color: #41beff;
 }
 
@@ -62,7 +62,7 @@ section.hero h1 {
   font-size: 88px;
   color: white;
   letter-spacing: 8px;
-  padding-top: 288px;
+  padding-top: 248px;
 }
 
 section.hero img {
@@ -84,22 +84,49 @@ div.section-b-about {
   justify-content: center;
   padding: 8%;
   width: 50%;
-  height: 64vh;
+  height: 80vh;
 
   background-color: white;
 }
 
-div.section-a-img,
+/* div.section-a-img1,
+div.section-a-img2,
 div.section-b-about {
   display: flex;
   width: 50%;
   height: 64vh;
 
+} */
+
+div.section-a-img1,
+div.section-a-img2 {
+  width: 50%;
+  height: 80vh;
 }
 
-div.section-a-img img {
-  width: fit-content;
+div.section-a-img1 {
+  
+  background: #ffffff url("/images/desktop/image-transform.jpg") no-repeat right top;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #facf00;
 }
+
+div.section-a-img2 {
+
+  background: #ffffff url("/images/desktop/image-stand-out.jpg") no-repeat right top;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #f67566;
+}
+
+/* div.section-a-img img {
+  width: fit-content;
+} */
 
 div.section-a-copy h2 {
   font-size: 32px;
@@ -246,4 +273,69 @@ footer div a {
 
 footer div.social img {
   margin-left: 16px;
+}
+
+@media (max-width: 1054px) {
+
+  section.hero h1 {
+    padding-top: 168px;
+  }
+
+  section.section-b div:nth-child(1), 
+  section.section-b div:nth-child(2) {
+    padding: 56px 88px;
+  }
+}
+
+@media (max-width: 740px) {
+
+  section.hero h1 {
+    /* font-size: 40px; */
+    padding-top: 172px;
+  }
+
+  section.hero img {
+    padding-top: 72px;
+}
+  section.section-b div:nth-child(1), 
+  section.section-b div:nth-child(2) {
+    padding: 56px 56px;
+  }
+
+  div.section-a-copy,
+  div.section-b-about,
+  div.section-a-img1,
+  div.section-a-img2,
+  section.section-c div.clients div  {
+    width: 100%;
+  }
+
+  section.section-c div.clients div:nth-child(1) h5,
+  section.section-c div.clients div:nth-child(2) h5 {
+    margin-bottom: 88px;
+  } 
+
+  section.section-a div:nth-child(1) { order: 2; }
+  section.section-a div:nth-child(2) { order: 1; }
+  section.section-a div:nth-child(3) { order: 3; }
+  section.section-a div:nth-child(4) { order: 4; }
+
+  section.section-d-gallery {
+    flex-wrap: wrap;
+  }
+  section.section-d-gallery img {
+    width: 50%;
+  }
+
+  @media (max-width: 300px) {
+
+    section.hero h1 {
+      font-size: 40px;
+      padding-top: 172px;
+    }
+
+    section.hero img {
+      padding-top: 72px;
+  }
+  }
 }
